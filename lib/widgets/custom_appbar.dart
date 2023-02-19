@@ -17,13 +17,16 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Container(
-            padding: EdgeInsets.fromLTRB(16, 8, 8, 8),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.white
+          GestureDetector(
+            onTap: leftCallback != null ? () => leftCallback!() : null,
+            child: Container(
+              padding: EdgeInsets.fromLTRB(16, 8, 8, 8),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white
+              ),
+              child: Icon(leftIcon),
             ),
-            child: Icon(leftIcon),
           ),
           Container(
             padding: EdgeInsets.all(8),
