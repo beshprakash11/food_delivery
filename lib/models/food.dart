@@ -1,4 +1,6 @@
 
+import 'package:flutter/cupertino.dart';
+
 class Food{
   String imgUrl;
   String desc;
@@ -11,5 +13,17 @@ class Food{
   List<Map<String, String>> ingredients;
   String about;
   String hightLight;
-  
+  Food(
+    this.imgUrl,
+    this.desc, 
+    this.name, 
+    this.waitTime,
+    this.score, 
+    this.cal, 
+    this.price,
+    this.quantity,
+    this.ingredients,
+    this.about,
+    this.hightLight
+  );
 }
