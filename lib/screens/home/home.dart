@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
 
+import '../../widgets/custom_appbar.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -17,7 +19,10 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomAppBar()
+          CustomAppBar(
+            Icons.arrow_back_ios_outlined,
+            Icons.search_outlined
+          )
         ],
       ),
     );
