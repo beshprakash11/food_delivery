@@ -11,5 +11,9 @@ class Restaurant{
   String desc;
   num score;
   Map<String, List<Food>> menu;
-  Restaurant();
+  Restaurant(
+    this.name, this. waitTime, this.distance,
+    this.label, this.logoUrl, this.desc, 
+    this.score, this.menu
+  );
 }
