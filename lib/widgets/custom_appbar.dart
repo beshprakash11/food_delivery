@@ -21,14 +21,7 @@ class CustomAppBar extends StatelessWidget {
             onTap: leftCallback != null ? () => leftCallback!() : null,
             child: _buildIcon(leftIcon),
           ),
-          Container(
-            padding: EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.white
-            ),
-            child: Icon(rightIcon),
-          )
+          _buildIcon(rightIcon)
         ],
       ),
     );
