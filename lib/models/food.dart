@@ -12,7 +12,7 @@ class Food{
   num quantity;
   List<Map<String, String>> ingredients;
   String about;
-  String hightLight;
+  bool hightLight;
   Food(
     this.imgUrl,
     this.desc, 
@@ -24,6 +24,6 @@ class Food{
     this.quantity,
     this.ingredients,
     this.about,
-    this.hightLight
+    {this.hightLight = false}
   );
 }
