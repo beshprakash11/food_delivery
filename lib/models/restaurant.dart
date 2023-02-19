@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/cupertino.dart';
+import 'package:food_delivery/models/food.dart';
 
 class Restaurant{
   String name;
