@@ -5,4 +5,5 @@ This projects is usually in Food delivery frontend.
 This pojects contain two model, one is food model and another is resturant model.
 
 ## Food Model
+- Contain food related products.
 ## Resturant Model
