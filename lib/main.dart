@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Food Delivery App',
       debugShowCheckedModeBanner: false,
+      title: 'Food Delivery App',      
       home: HomePage(),
     );
   }
