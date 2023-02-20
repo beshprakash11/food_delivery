@@ -27,7 +27,24 @@ class DetilPage extends StatelessWidget {
             FoodDetail(food)
           ],
         ),
-      )
+      ),
+      floatingActionButton: Container(
+        width: 100,
+        height: 56,
+        child: RawMaterialButton(
+          fillColor: kPrimaryColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),            
+          ),
+          elevation: 2,
+          child: Row(
+            children: [
+
+            ],
+          ),
+          onPressed: (){},
+        ),
+      ),
     );
   }
 }

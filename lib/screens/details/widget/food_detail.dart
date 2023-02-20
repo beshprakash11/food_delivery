@@ -53,7 +53,6 @@ class FoodDetail extends StatelessWidget {
           const SizedBox(height: 30,),
           _buildAboutTitle(),
           const SizedBox(height: 30,),
-
           _buildAboutTextData()
         ],
       ),
