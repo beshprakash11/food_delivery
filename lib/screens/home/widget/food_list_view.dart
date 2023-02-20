@@ -27,7 +27,7 @@ class FoodListView extends StatelessWidget {
                 onTap: (){
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => DetilPage()
+                      builder: (context) => DetilPage(restaurant.menu[category[selected]]![index])
                     )
                   );
                 },
