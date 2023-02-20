@@ -61,7 +61,18 @@ class FoodDetail extends StatelessWidget {
                 ),
               )
             ],
-          )
+          ),
+          const SizedBox(height: 30,),
+
+          Text(
+              food.about,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                wordSpacing: 1,
+                height: 1.5,
+                fontSize: 16
+              ),
+            )
         ],
       ),
     );
