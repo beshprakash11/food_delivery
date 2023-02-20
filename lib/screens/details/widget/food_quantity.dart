@@ -72,7 +72,14 @@ class FoodQuantity extends StatelessWidget {
                         fontWeight: FontWeight.bold
                       ),
                     ),
-                  )
+                  ),
+                  Text(
+                    '+',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
                 ],
               ),
 
