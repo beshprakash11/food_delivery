@@ -39,7 +39,16 @@ class FoodQuantity extends StatelessWidget {
                 )
               ]),
             ),
-          )
+          ),
+          Align(
+            alignment: Alignment(0.3, 0),
+            child: Container(
+              height: double.maxFinite,
+
+            ),
+
+          ),
+
         ],
       ),
     );
