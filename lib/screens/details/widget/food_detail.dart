@@ -45,7 +45,17 @@ class FoodDetail extends StatelessWidget {
             ],
           ),
           SizedBox(height: 30,),
-          FoodQuantity(food)
+          FoodQuantity(food),
+          SizedBox(height: 30,),
+          Row(children: [
+            Text(
+              "Ingredients",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            )
+          ],)
         ],
       ),
     );
