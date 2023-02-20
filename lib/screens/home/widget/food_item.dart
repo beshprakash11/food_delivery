@@ -8,6 +8,11 @@ class FoodItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 110,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20)
+      ),
       child: Text(food.name),
     );
   }
