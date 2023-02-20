@@ -33,9 +33,11 @@ class FoodDetail extends StatelessWidget {
     );
   }
 
-  Widget _buildIconText(){
-    return Container(
-
+  Widget _buildIconText(IconData icon , Color color, String text){
+    return Row(
+      children: [
+        
+      ],
     );
   }
 }
