@@ -8,6 +8,8 @@ class RestaurantInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     final resturaant = Restaurant.generateRestaurant();
     return Container(
+      margin: EdgeInsets.only(top: 40),
+      padding: EdgeInsets.symmetric(horizontal: 25),
       child: Text("Restaurant info"),
     );
   }
