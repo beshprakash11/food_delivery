@@ -17,18 +17,18 @@ class FoodListView extends StatelessWidget {
       child: PageView(
         controller: pageController,
         onPageChanged: (index) => callback(index),
-        children: [
+        children: 
           category.map((e) => 
           ListView.separated(
               itemBuilder: (context, index) => 
               FoodItem(
-                restaurant.menu[category]![index]
+                restaurant.menu[category[selected]]![index]
               ),
               separatorBuilder:(_, index) => SizedBox(height: 15,) ,
               itemCount: restaurant.menu[category[selected]]!.length,
             )
-          )
-        ],
+          ).toList()
+        ,
       ),
     );
   }
