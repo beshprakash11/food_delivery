@@ -63,7 +63,11 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey.withOpacity(0.5),
                   borderRadius: BorderRadius.circular(8)
                 ), 
-                activeDotDecoration: 
+                activeDotDecoration: DotDecoration(
+                  width: 10;
+                  height: 10;
+                  color: kBackground
+                )
               ),
             ),
           )
