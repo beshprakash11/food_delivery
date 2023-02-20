@@ -24,6 +24,12 @@ class FoodList extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               color: selected == index ? kPrimaryColor : Colors.white
             ),
+            child: Text(
+              category[index],
+              style: TextStyle(
+                fontWeight: FontWeight.bold
+              ),
+            ),
           ),
         ), 
         separatorBuilder: (_, index) => SizedBox(width: 20,), 
