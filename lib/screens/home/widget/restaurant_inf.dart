@@ -84,7 +84,13 @@ class RestaurantInfo extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text('"${resturaant.desc}"')
+        Text(
+          '"${resturaant.desc}"',
+          style: TextStyle(
+            fontSize: 16,
+            
+          ),
+        )
 
       ],
     );
