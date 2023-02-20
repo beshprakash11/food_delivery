@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/food.dart';
 
 class FoodItem extends StatelessWidget {
@@ -45,7 +46,15 @@ class FoodItem extends StatelessWidget {
                       Icon(Icons.arrow_forward_ios_outlined, size: 15,)
                     ],
                   ),
-                  SizedBox(height: 5,)
+                  SizedBox(height: 5,),
+                  Text(
+                    food.desc,
+                    style: TextStyle(
+                      color: food.hightLight ? kPrimaryColor : Colors.grey.withOpacity(0.8),
+                      height: 1.5
+                    ),
+                  ),
+                  SizedBox(height: 5,),
                 ],
               ),
             )
