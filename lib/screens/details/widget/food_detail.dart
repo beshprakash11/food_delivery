@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/food.dart';
@@ -63,10 +61,23 @@ class FoodDetail extends StatelessWidget {
             height: 100,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) => Text(
-                'as',
-                style: TextStyle(
-                  color: Colors.black
+              itemBuilder: (context, index) => 
+              Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(40)
+                ),
+                child: Column(
+                  children: [
+                    Image.asset(food.ingredients[index].values.first),
+                    Text(
+                      'as',
+                      style: TextStyle(
+                        color: Colors.black
+                      ),
+                    ),
+                  ],
                 ),
               ), 
               separatorBuilder: (_, index) => SizedBox(width: 15,), 
