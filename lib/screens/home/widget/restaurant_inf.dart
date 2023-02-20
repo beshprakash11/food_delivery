@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:food_delivery/models/restaurant.dart';
 
@@ -64,6 +62,10 @@ class RestaurantInfo extends StatelessWidget {
                     ],
                   )
                 ],
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(50),
+                child: Image.asset(resturaant.logoUrl, width: 80,),
               ),
             ],
           ),
