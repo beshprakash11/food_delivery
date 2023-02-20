@@ -19,7 +19,9 @@ class FoodListView extends StatelessWidget {
         children: [
           category.map((e) => 
           ListView.separated(
-              itemBuilder: (context, index) => FoodItem(),
+              itemBuilder: (context, index) => FoodItem(
+                
+              ),
               separatorBuilder: ,
               itemCount: ,
             )
