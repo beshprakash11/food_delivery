@@ -34,7 +34,10 @@ class FoodItem extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      
+                      Text(
+                        food.name
+                      ),
+                      Icon(Icons.arrow_forward_ios_outlined, size: 15,)
                     ],
                   )
                 ],
