@@ -57,9 +57,13 @@ class _HomePageState extends State<HomePage> {
               controller: pageController,
               count: restaurant.menu.length,
               effect: CustomizableEffect(
-                dotDecoration: dotDecoration, 
+                dotDecoration: DotDecoration(
+                  width: 8,
+                  height: 8,
+                  color: Colors.grey.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(8)
+                ), 
                 activeDotDecoration: 
-                activeDotDecoration
               ),
             ),
           )
