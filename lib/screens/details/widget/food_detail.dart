@@ -70,9 +70,9 @@ class FoodDetail extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Image.asset(food.ingredients[index].values.first),
+                    Image.asset(food.ingredients[index].values.first, width: 52,),
                     Text(
-                      'as',
+                      food.ingredients[index].keys.first,
                       style: TextStyle(
                         color: Colors.black
                       ),
