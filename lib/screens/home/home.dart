@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
             setState(() {
               selected = index;
             });
+            pageController.jumpToPage(index);
           }, restaurant)
         ],
       ),
