@@ -101,8 +101,8 @@ class RestaurantInfo extends StatelessWidget {
                 fontSize: 18,
                 fontWeight: FontWeight.bold
               ),
-            )
-
+            ),
+            SizedBox(width: 15,)
           ],
         ),
       ],
