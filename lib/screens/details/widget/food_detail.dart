@@ -8,7 +8,11 @@ class FoodDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('Food details'),
+      child: Column(
+        children: [
+          Text('Food details'),
+        ],
+      ),
     );
   }
 }
