@@ -20,7 +20,7 @@ class FoodListView extends StatelessWidget {
           category.map((e) => 
           ListView.separated(
               itemBuilder: (context, index) => FoodItem(
-                
+                restaurant.menu[category]![index]
               ),
               separatorBuilder: ,
               itemCount: ,
