@@ -67,7 +67,7 @@ class FoodItem extends StatelessWidget {
                       Text(
                         '${food.price}',
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ),
                       )

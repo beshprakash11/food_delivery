@@ -49,6 +49,19 @@ class _HomePageState extends State<HomePage> {
               pageController,
               restaurant
             ),
+          ),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 25),
+            height: 60,
+            child: SmoothPageIndicator(
+              controller: pageController,
+              count: restaurant.menu.length,
+              effect: CustomizableEffect(
+                dotDecoration: dotDecoration, 
+                activeDotDecoration: 
+                activeDotDecoration
+              ),
+            ),
           )
         ],
       ),
