@@ -41,6 +41,16 @@ class FoodImg extends StatelessWidget {
             margin: EdgeInsets.all(15),
             width: 250,
             height: 250,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  offset: Offset(-1, 10),
+                  blurRadius: 10
+                )
+              ]
+            ),
             child: Image.asset(food.imgUrl, fit: BoxFit.cover,),
           ),
         ),
