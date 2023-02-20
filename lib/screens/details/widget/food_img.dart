@@ -38,6 +38,9 @@ class FoodImg extends StatelessWidget {
         Align(
           alignment: Alignment.center,
           child: Container(
+            margin: EdgeInsets.all(15),
+            width: 250,
+            height: 250,
             child: Image.asset(food.imgUrl, fit: BoxFit.cover,),
           ),
         ),
