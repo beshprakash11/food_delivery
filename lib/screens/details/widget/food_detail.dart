@@ -24,11 +24,18 @@ class FoodDetail extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              _buildIconText()
 
             ],
           )
         ],
       ),
+    );
+  }
+
+  Widget _buildIconText(){
+    return Container(
+
     );
   }
 }
