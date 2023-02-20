@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class FoodDetail extends StatelessWidget {
   const FoodDetail({super.key});
 
