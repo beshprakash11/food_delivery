@@ -34,7 +34,13 @@ class FoodImg extends StatelessWidget {
               ),
             ),
           ],
-        )
+        ),
+        Align(
+          alignment: Alignment.center,
+          child: Container(
+            child: Image.asset(food.imgUrl, fit: BoxFit.cover,),
+          ),
+        ),
 
       ]),
     );
