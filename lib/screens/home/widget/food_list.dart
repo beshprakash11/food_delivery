@@ -10,7 +10,13 @@ class FoodList extends StatelessWidget {
   Widget build(BuildContext context) {
     final category = restaurant.menu.keys.toList();
     return Container(
-      child: Text('List'),
+      height: 100,
+      padding: EdgeInsets.symmetric(vertical: 30),
+      child: ListView.separated(
+        itemBuilder: itemBuilder, 
+        separatorBuilder: separatorBuilder, 
+        itemCount: itemCount
+      ),
     );
   }
 }
