@@ -22,7 +22,7 @@ class DetilPage extends StatelessWidget {
               Icons.favorite_outlined,
               leftCallback: () => Navigator.of(context).pop(),
             ),
-            FoodImg(food.imgUrl)
+            FoodImg(food)
           ],
         ),
       )
