@@ -8,7 +8,13 @@ class FoodQuantity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("food qty"),
+      width: double.maxFinite,
+      height: 40,
+      child: Stack(
+        children: [
+          Text("food qty"),
+        ],
+      ),
     );
   }
 }
