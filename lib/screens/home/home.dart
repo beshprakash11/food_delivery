@@ -81,6 +81,14 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          
+        },
+        backgroundColor: kPrimaryColor,
+        elevation: 2,
+        child: Icon(Icons.shopping_bag_outlined, color: Colors.black, size: 30,),
+      ),
     );
   }
 }
