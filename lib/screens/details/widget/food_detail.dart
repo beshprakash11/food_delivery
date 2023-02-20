@@ -28,6 +28,11 @@ class FoodDetail extends StatelessWidget {
                 Icons.access_time_outlined,
                 Colors.blue,
                 food.waitTime
+              ),
+              _buildIconText(
+                Icons.star_outlined,
+                Colors.amber,
+                food.score.toString()
               )
 
             ],
