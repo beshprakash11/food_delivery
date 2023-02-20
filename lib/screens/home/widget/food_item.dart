@@ -21,6 +21,21 @@ class FoodItem extends StatelessWidget {
             height: 110,
             child: Image.asset(food.imgUrl, fit: BoxFit.fitHeight,),
           ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.only(
+                top: 20,
+                left: 20,
+                right: 10
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+
+                ],
+              ),
+            )
+          )
         ],
       ),
     );
