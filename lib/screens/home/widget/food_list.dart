@@ -15,7 +15,9 @@ class FoodList extends StatelessWidget {
       child: ListView.separated(
         padding: EdgeInsets.symmetric(horizontal: 25),
         scrollDirection: Axis.horizontal,
-        itemBuilder: itemBuilder, 
+        itemBuilder: (context, index) => GestureDetector(
+          onTap: () => callback,
+        ), 
         separatorBuilder: separatorBuilder, 
         itemCount: itemCount
       ),
