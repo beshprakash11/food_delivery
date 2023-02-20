@@ -34,7 +34,12 @@ class RestaurantInfo extends StatelessWidget {
                           color: Colors.grey.withOpacity(0.4),
                           borderRadius: BorderRadius.circular(5)
                         ),
-                        child: Text(resturaant.waitTime)
+                        child: Text(
+                          resturaant.waitTime,
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                        )
                       ),
                       Text(resturaant.distance),
                       Text(resturaant.label)
