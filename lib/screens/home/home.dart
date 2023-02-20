@@ -15,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var selected = 0;
+  final pageController = PageController();
   final restaurant = Restaurant.generateRestaurant();
   @override
   Widget build(BuildContext context) {
