@@ -18,7 +18,15 @@ class RestaurantInfo extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(""),
+                  Text(resturaant.name),
+                  SizedBox(height: 10,),
+                  Row(
+                    children: [
+                      Text(resturaant.waitTime),
+                      Text(resturaant.distance),
+                      Text(resturaant.label)
+                    ],
+                  )
                 ],
               ),
             ],
