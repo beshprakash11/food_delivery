@@ -10,7 +10,15 @@ class RestaurantInfo extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(top: 40),
       padding: EdgeInsets.symmetric(horizontal: 25),
-      child: Text("Restaurant info"),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Text("Restaurant info"),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
