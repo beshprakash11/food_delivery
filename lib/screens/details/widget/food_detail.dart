@@ -51,31 +51,39 @@ class FoodDetail extends StatelessWidget {
           const SizedBox(height: 30,),
           _buildFoodIngredients(),
           const SizedBox(height: 30,),
-          Row(
-            children: [
-              Text(
-                'About',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),
-              )
-            ],
-          ),
+          _buildAboutTitle(),
           const SizedBox(height: 30,),
 
-          Text(
-              food.about,
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                wordSpacing: 1,
-                height: 1.5,
-                fontSize: 16
-              ),
-            )
+          _buildAboutTextData()
         ],
       ),
     );
+  }
+
+  Widget _buildAboutTextData() {
+    return Text(
+            food.about,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              wordSpacing: 1,
+              height: 1.5,
+              fontSize: 16
+            ),
+          );
+  }
+
+  Widget _buildAboutTitle() {
+    return Row(
+          children: [
+            Text(
+              'About',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18
+              ),
+            )
+          ],
+        );
   }
 
   Widget _buildIngredentTitle() {
