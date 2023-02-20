@@ -13,7 +13,16 @@ class FoodItem extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(20)
       ),
-      child: Text(food.name),
+      child: Row(
+        children: [
+          Container(
+            padding: EdgeInsets.all(5),
+            width: 110,
+            height: 110,
+            child: Image.asset(food.imgUrl, fit: BoxFit.fitHeight,),
+          ),
+        ],
+      ),
     );
   }
 }
