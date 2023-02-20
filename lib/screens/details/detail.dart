@@ -16,7 +16,11 @@ class DetilPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            CustomAppBar(Icons.arrow_back_ios_outlined, Icons.favorite_outlined)
+            CustomAppBar(
+              Icons.arrow_back_ios_outlined, 
+              Icons.favorite_outlined,
+              leftCallback: () => Navigator.of(context).pop(),
+            )
           ],
         ),
       )
