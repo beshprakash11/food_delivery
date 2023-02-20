@@ -67,7 +67,13 @@ class _HomePageState extends State<HomePage> {
                   width: 10,
                   height: 10,
                   color: kBackground,
-                  
+                  borderRadius: BorderRadius.circular(10),
+                  dotBorder: DotBorder(
+                    color: kPrimaryColor,
+                    padding: 2,
+                    width: 2
+                  )
+
                 )
               ),
             ),
