@@ -13,6 +13,7 @@ class RestaurantInfo extends StatelessWidget {
       child: Column(
         children: [
           _firstRow(resturaant),
+          SizedBox(height: 5,),
           _secondRow(resturaant),
         ],
       ),
@@ -80,6 +81,12 @@ class RestaurantInfo extends StatelessWidget {
   }
 
   Widget _secondRow(Restaurant resturaant){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text('"${resturaant.desc}"')
 
+      ],
+    );
   }
 }
