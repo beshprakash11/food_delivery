@@ -8,6 +8,8 @@ class FoodImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 250,
+      
       child: Text('Fod imae'),
     );
   }
