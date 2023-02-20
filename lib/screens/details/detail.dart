@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
+import 'package:food_delivery/widgets/custom_appbar.dart';
 
 import '../../models/food.dart';
 
@@ -15,7 +16,7 @@ class DetilPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            
+            CustomAppBar(Icons.arrow_back_ios_outlined, Icons.favorite_outlined)
           ],
         ),
       )
