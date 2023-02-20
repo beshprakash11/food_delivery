@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
+import 'package:food_delivery/models/restaurant.dart';
+import 'package:food_delivery/screens/home/widget/food_list.dart';
 import 'package:food_delivery/screens/home/widget/restaurant_inf.dart';
 
 import '../../widgets/custom_appbar.dart';
@@ -13,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var selected = 0;
+  final restaurant = Restaurant.generateRestaurant();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +27,12 @@ class _HomePageState extends State<HomePage> {
             Icons.arrow_back_ios_outlined,
             Icons.search_outlined
           ),
-          RestaurantInfo()
+          RestaurantInfo(),
+          FoodList(selected, (int index){
+            setState(() {
+              selected = index;
+            });
+          }, restaurant)
         ],
       ),
     );
