@@ -18,7 +18,13 @@ class RestaurantInfo extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(resturaant.name),
+                  Text(
+                    resturaant.name,
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
                   SizedBox(height: 10,),
                   Row(
                     children: [
