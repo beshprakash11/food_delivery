@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/models/restaurant.dart';
+import 'package:food_delivery/screens/home/widget/food_item.dart';
 
 class FoodListView extends StatelessWidget {
   final int selected;
@@ -19,11 +20,12 @@ class FoodListView extends StatelessWidget {
         children: [
           category.map((e) => 
           ListView.separated(
-              itemBuilder: (context, index) => FoodItem(
+              itemBuilder: (context, index) => 
+              FoodItem(
                 restaurant.menu[category]![index]
               ),
-              separatorBuilder: ,
-              itemCount: ,
+              separatorBuilder:(_, index) => SizedBox(height: 15,) ,
+              itemCount: restaurant.menu[category[selected]]!.length,
             )
           )
         ],
