@@ -13,7 +13,13 @@ class FoodDetail extends StatelessWidget {
       color: kBackground,
       child: Column(
         children: [
-          Text('Food details'),
+          Text(
+            food.name,
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold
+            ),
+          ),
         ],
       ),
     );
