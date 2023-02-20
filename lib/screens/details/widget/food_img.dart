@@ -9,8 +9,15 @@ class FoodImg extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 250,
-      
-      child: Text('Fod imae'),
+
+      child: Stack(children: [
+        Expanded(
+          flex: 1,
+          child: Container(
+            
+          ),
+        )
+      ]),
     );
   }
 }
