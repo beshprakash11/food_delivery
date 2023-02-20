@@ -21,6 +21,23 @@ class FoodQuantity extends StatelessWidget {
                 color: Colors.grey.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(30)
               ),
+              child: Row(children: [
+                SizedBox(width: 15,),
+                Text(
+                  '\$',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
+                Text(
+                  food.price.toString(),
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+              ]),
             ),
           )
         ],
