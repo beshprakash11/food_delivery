@@ -47,7 +47,14 @@ class DetilPage extends StatelessWidget {
                   color: Colors.white,
                   shape: BoxShape.circle
                 ),
-                child: ,
+                child: Text(
+                  food.quantity.toString(),
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
               )
             ],
           ),
