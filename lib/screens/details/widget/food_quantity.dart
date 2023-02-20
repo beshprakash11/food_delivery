@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/food.dart';
 
 class FoodQuantity extends StatelessWidget {
@@ -44,6 +45,17 @@ class FoodQuantity extends StatelessWidget {
             alignment: Alignment(0.3, 0),
             child: Container(
               height: double.maxFinite,
+              width: 120,
+              decoration: BoxDecoration(
+                color: kPrimaryColor,
+                borderRadius: BorderRadius.circular(30)
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+
+                ],
+              ),
 
             ),
 
