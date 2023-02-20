@@ -8,6 +8,7 @@ class FoodList extends StatelessWidget {
   FoodList(this.selected, this.callback, this.restaurant);
   @override
   Widget build(BuildContext context) {
+    final category = restaurant.menu.keys.toList();
     return Container(
       child: Text('List'),
     );
