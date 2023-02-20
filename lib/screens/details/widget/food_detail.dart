@@ -24,7 +24,11 @@ class FoodDetail extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _buildIconText()
+              _buildIconText(
+                Icons.access_time_outlined,
+                Colors.blue,
+                food.waitTime
+              )
 
             ],
           )
