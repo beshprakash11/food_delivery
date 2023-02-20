@@ -12,9 +12,13 @@ class DetilPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColor,
-      body: Center(
-        child: Text('Detail Pages'),
-      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            
+          ],
+        ),
+      )
     );
   }
 }
