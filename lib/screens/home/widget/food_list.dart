@@ -27,7 +27,7 @@ class FoodList extends StatelessWidget {
           ),
         ), 
         separatorBuilder: (_, index) => SizedBox(width: 20,), 
-        itemCount: itemCount
+        itemCount: category.length
       ),
     );
   }
