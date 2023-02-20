@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
+import 'package:food_delivery/screens/details/widget/food_img.dart';
 import 'package:food_delivery/widgets/custom_appbar.dart';
 
 import '../../models/food.dart';
@@ -20,7 +21,8 @@ class DetilPage extends StatelessWidget {
               Icons.arrow_back_ios_outlined, 
               Icons.favorite_outlined,
               leftCallback: () => Navigator.of(context).pop(),
-            )
+            ),
+            FoodImg()
           ],
         ),
       )
