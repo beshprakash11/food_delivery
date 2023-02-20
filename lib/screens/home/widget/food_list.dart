@@ -13,6 +13,8 @@ class FoodList extends StatelessWidget {
       height: 100,
       padding: EdgeInsets.symmetric(vertical: 30),
       child: ListView.separated(
+        padding: EdgeInsets.symmetric(horizontal: 25),
+        scrollDirection: Axis.horizontal,
         itemBuilder: itemBuilder, 
         separatorBuilder: separatorBuilder, 
         itemCount: itemCount
