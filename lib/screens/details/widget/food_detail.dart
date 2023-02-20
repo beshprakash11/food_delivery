@@ -44,9 +44,9 @@ class FoodDetail extends StatelessWidget {
 
             ],
           ),
-          SizedBox(height: 30,),
+          const SizedBox(height: 30,),
           FoodQuantity(food),
-          SizedBox(height: 30,),
+          const SizedBox(height: 30,),
           Row(children: [
             Text(
               "Ingredients",
@@ -55,7 +55,8 @@ class FoodDetail extends StatelessWidget {
                 fontSize: 18,
               ),
             )
-          ],)
+          ],),
+          const SizedBox(height: 30,),
         ],
       ),
     );
