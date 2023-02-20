@@ -76,6 +76,7 @@ class _HomePageState extends State<HomePage> {
 
                 )
               ),
+              onDotClicked: (index) => pageController.jumpToPage(index),
             ),
           )
         ],
