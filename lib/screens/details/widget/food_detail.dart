@@ -57,36 +57,40 @@ class FoodDetail extends StatelessWidget {
             )
           ],),
           const SizedBox(height: 30,),
-          Container(
-            height: 100,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) => 
-              Container(
-                padding: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(40)
-                ),
-                child: Column(
-                  children: [
-                    Image.asset(food.ingredients[index].values.first, width: 52,),
-                    Text(
-                      food.ingredients[index].keys.first,
-                      style: TextStyle(
-                        color: Colors.black
-                      ),
-                    ),
-                  ],
-                ),
-              ), 
-              separatorBuilder: (_, index) => SizedBox(width: 15,), 
-              itemCount: food.ingredients.length
-            ),
-          ),
+          _buildFoodIngredients(),
         ],
       ),
     );
+  }
+
+  Widget _buildFoodIngredients() {
+    return Container(
+          height: 100,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) => 
+            Container(
+              padding: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(40)
+              ),
+              child: Column(
+                children: [
+                  Image.asset(food.ingredients[index].values.first, width: 52,),
+                  Text(
+                    food.ingredients[index].keys.first,
+                    style: TextStyle(
+                      color: Colors.black
+                    ),
+                  ),
+                ],
+              ),
+            ), 
+            separatorBuilder: (_, index) => SizedBox(width: 15,), 
+            itemCount: food.ingredients.length
+          ),
+        );
   }
 
 
