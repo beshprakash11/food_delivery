@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/models/food.dart';
 
 class FoodItem extends StatelessWidget {
-  const FoodItem({super.key});
+  final Food food;
+  FoodItem(this.food);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Text(food.name),
+    );
   }
 }
