@@ -50,6 +50,18 @@ class FoodDetail extends StatelessWidget {
           _buildIngredentTitle(),
           const SizedBox(height: 30,),
           _buildFoodIngredients(),
+          const SizedBox(height: 30,),
+          Row(
+            children: [
+              Text(
+                'About',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
