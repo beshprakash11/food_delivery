@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/food.dart';
@@ -57,24 +59,25 @@ class FoodDetail extends StatelessWidget {
             )
           ],),
           const SizedBox(height: 30,),
-
-          _buildFoodIngredient(),
+          Container(
+            height: 100,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) => Text(
+                'as',
+                style: TextStyle(
+                  color: Colors.black
+                ),
+              ), 
+              separatorBuilder: (_, index) => SizedBox(width: 15,), 
+              itemCount: food.ingredients.length
+            ),
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildFoodIngredient() {
-    return Container(
-          height: 100,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            itemBuilder: itemBuilder, 
-            separatorBuilder: separatorBuilder, 
-            itemCount: food.ingredients.length
-          ),
-        );
-  }
 
   Widget _buildIconText(IconData icon , Color color, String text){
     return Row(
