@@ -12,7 +12,14 @@ class FoodListView extends StatelessWidget {
   Widget build(BuildContext context) {
     final category = restaurant.menu.keys.toList();
     return Container(
-      child: Text("List view"),
+      padding: EdgeInsets.symmetric(horizontal: 25),
+      child: PageView(
+        controller: pageController,
+        onPageChanged: (index) => callback(index),
+        children: [
+          
+        ],
+      ),
     );
   }
 }
