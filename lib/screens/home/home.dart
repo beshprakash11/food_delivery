@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/restaurant.dart';
 import 'package:food_delivery/screens/home/widget/food_list.dart';
