@@ -64,9 +64,10 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(8)
                 ), 
                 activeDotDecoration: DotDecoration(
-                  width: 10;
-                  height: 10;
-                  color: kBackground
+                  width: 10,
+                  height: 10,
+                  color: kBackground,
+                  
                 )
               ),
             ),
