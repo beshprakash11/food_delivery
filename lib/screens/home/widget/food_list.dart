@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class FoodList extends StatelessWidget {
-  const FoodList({super.key});
-
+  final int selected;
+  final Function callback;
+  FoodList(this.selected, this.callback);
   @override
   Widget build(BuildContext context) {
     return Container();
