@@ -13,6 +13,7 @@ class RestaurantInfo extends StatelessWidget {
       child: Column(
         children: [
           _firstRow(resturaant),
+          _secondRow(resturaant),
         ],
       ),
     );
@@ -76,5 +77,9 @@ class RestaurantInfo extends StatelessWidget {
             ),
           ],
         );
+  }
+
+  Widget _secondRow(Restaurant resturaant){
+
   }
 }
