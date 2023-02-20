@@ -10,6 +10,7 @@ class FoodListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final category = restaurant.menu.keys.toList();
     return Container(
       child: Text("List view"),
     );
