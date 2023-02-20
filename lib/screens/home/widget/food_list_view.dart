@@ -22,8 +22,13 @@ class FoodListView extends StatelessWidget {
           ListView.separated(
             padding: EdgeInsets.zero,
               itemBuilder: (context, index) => 
-              FoodItem(
-                restaurant.menu[category[selected]]![index]
+              GestureDetector(
+                onTap: (){
+                  
+                },
+                child: FoodItem(
+                  restaurant.menu[category[selected]]![index]
+                ),
               ),
               separatorBuilder:(_, index) => SizedBox(height: 15,) ,
               itemCount: restaurant.menu[category[selected]]!.length,
