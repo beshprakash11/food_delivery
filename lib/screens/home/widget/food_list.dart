@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/restaurant.dart';
 
 class FoodList extends StatelessWidget {
@@ -16,7 +17,14 @@ class FoodList extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 25),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => GestureDetector(
-          onTap: () => callback,
+          onTap: () => callback(index),
+          child: Container(
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: selected == index ? kPrimaryColor : Colors.white
+            ),
+          ),
         ), 
         separatorBuilder: separatorBuilder, 
         itemCount: itemCount
