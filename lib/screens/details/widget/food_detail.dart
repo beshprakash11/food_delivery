@@ -57,6 +57,16 @@ class FoodDetail extends StatelessWidget {
             )
           ],),
           const SizedBox(height: 30,),
+
+          Container(
+            height: 100,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              itemBuilder: itemBuilder, 
+              separatorBuilder: separatorBuilder, 
+              itemCount: food.ingredients.length
+            ),
+          ),
         ],
       ),
     );
