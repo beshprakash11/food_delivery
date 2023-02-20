@@ -13,8 +13,14 @@ class RestaurantInfo extends StatelessWidget {
       child: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Restaurant info"),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(""),
+                ],
+              ),
             ],
           ),
         ],
