@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/food.dart';
 
 class FoodImg extends StatelessWidget {
@@ -21,7 +22,13 @@ class FoodImg extends StatelessWidget {
         Expanded(
           flex: 1,
           child: Container(
-
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(50),
+                topRight: Radius.circular(50),
+              ),
+              color: kBackground
+            ),
           ),
         ),
 
