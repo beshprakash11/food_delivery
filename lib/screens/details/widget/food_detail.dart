@@ -37,8 +37,17 @@ class FoodDetail extends StatelessWidget {
     return Row(
       children: [
         Icon(
-          
+          icon,
+          color: color,
+          size: 20,
         ),
+        Text(
+          text,
+          style: TextStyle(
+            fontSize: 16
+          ),
+        ),
+
       ],
     );
   }
