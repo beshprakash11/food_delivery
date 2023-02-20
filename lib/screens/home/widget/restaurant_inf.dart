@@ -95,7 +95,13 @@ class RestaurantInfo extends StatelessWidget {
         Row(
           children: [
             Icon(Icons.star_outlined, color: kPrimaryColor,),
-            Text('${resturaant.score}')
+            Text(
+              '${resturaant.score}',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold
+              ),
+            )
 
           ],
         ),
