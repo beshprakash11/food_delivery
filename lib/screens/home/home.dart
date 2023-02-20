@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/restaurant.dart';
 import 'package:food_delivery/screens/home/widget/food_list.dart';
+import 'package:food_delivery/screens/home/widget/food_list_view.dart';
 import 'package:food_delivery/screens/home/widget/restaurant_inf.dart';
 
 import '../../widgets/custom_appbar.dart';
@@ -44,6 +45,7 @@ class _HomePageState extends State<HomePage> {
                 });
               },
               pageController,
+              restaurant
             ),
           )
         ],
