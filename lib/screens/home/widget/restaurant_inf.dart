@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:food_delivery/models/restaurant.dart';
 
@@ -50,7 +52,15 @@ class RestaurantInfo extends StatelessWidget {
                           color: Colors.grey.withOpacity(0.4)
                         ),
                       ),
-                      Text(resturaant.label)
+                      SizedBox(width: 10,),
+                      Text(
+                        resturaant.label,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey.withOpacity(0.4)
+                        )
+                      )
                     ],
                   )
                 ],
