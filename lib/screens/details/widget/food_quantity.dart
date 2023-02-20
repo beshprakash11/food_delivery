@@ -33,7 +33,7 @@ class FoodQuantity extends StatelessWidget {
                 Text(
                   food.price.toString(),
                   style: TextStyle(
-                    fontSize: 12,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold
                   ),
                 )
