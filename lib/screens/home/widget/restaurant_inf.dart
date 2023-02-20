@@ -28,7 +28,14 @@ class RestaurantInfo extends StatelessWidget {
                   SizedBox(height: 10,),
                   Row(
                     children: [
-                      Text(resturaant.waitTime),
+                      Container(
+                        padding: EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.4),
+                          borderRadius: BorderRadius.circular(5)
+                        ),
+                        child: Text(resturaant.waitTime)
+                      ),
                       Text(resturaant.distance),
                       Text(resturaant.label)
                     ],
