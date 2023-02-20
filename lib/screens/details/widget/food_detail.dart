@@ -41,7 +41,9 @@ class FoodDetail extends StatelessWidget {
               )
 
             ],
-          )
+          ),
+          SizedBox(height: 30,),
+          FoodQuantity(food)
         ],
       ),
     );
