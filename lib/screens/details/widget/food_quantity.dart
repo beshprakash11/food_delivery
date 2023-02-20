@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/models/food.dart';
 
 class FoodQuantity extends StatelessWidget {
-  const FoodQuantity({super.key});
+  final Food food;
+  FoodQuantity(this.food);
 
   @override
   Widget build(BuildContext context) {
