@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/constants/colors.dart';
 import 'package:food_delivery/models/restaurant.dart';
 
 class RestaurantInfo extends StatelessWidget {
@@ -90,8 +91,13 @@ class RestaurantInfo extends StatelessWidget {
             fontSize: 16,
             
           ),
-        )
+        ),
+        Row(
+          children: [
+            Icon(Icons.star_outlined, color: kPrimaryColor,),
 
+          ],
+        ),
       ],
     );
   }
