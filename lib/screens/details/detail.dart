@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/constants/colors.dart';
 
 import '../../models/food.dart';
 
@@ -10,6 +11,7 @@ class DetilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kPrimaryColor,
       body: Center(
         child: Text('Detail Pages'),
       ),
