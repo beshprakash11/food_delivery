@@ -44,7 +44,8 @@ class FoodItem extends StatelessWidget {
                       ),
                       Icon(Icons.arrow_forward_ios_outlined, size: 15,)
                     ],
-                  )
+                  ),
+                  SizedBox(height: 5,)
                 ],
               ),
             )
