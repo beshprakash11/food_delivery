@@ -12,25 +12,29 @@ class FoodImg extends StatelessWidget {
       height: 250,
 
       child: Stack(children: [
-        Expanded(
-          flex: 1,
-          child: Container(
+        Column(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Container(
 
-          ),
-        ),
-
-        Expanded(
-          flex: 1,
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(50),
-                topRight: Radius.circular(50),
               ),
-              color: kBackground
             ),
-          ),
-        ),
+
+            Expanded(
+              flex: 1,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    topRight: Radius.circular(50),
+                  ),
+                  color: kBackground
+                ),
+              ),
+            ),
+          ],
+        )
 
       ]),
     );
