@@ -34,7 +34,18 @@ class _HomePageState extends State<HomePage> {
               selected = index;
             });
             pageController.jumpToPage(index);
-          }, restaurant)
+          }, restaurant),
+          Expanded(
+            child: FoodListView(
+              selected,
+              (int index){
+                setState(() {
+                  selected = index;
+                });
+              },
+              pageController,
+            ),
+          )
         ],
       ),
     );
