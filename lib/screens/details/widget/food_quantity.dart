@@ -53,7 +53,13 @@ class FoodQuantity extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-
+                  Text(
+                    '-',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold
+                    ),
+                  )
                 ],
               ),
 
