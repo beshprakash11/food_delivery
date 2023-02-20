@@ -38,8 +38,9 @@ class DetilPage extends StatelessWidget {
           ),
           elevation: 2,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-
+              
             ],
           ),
           onPressed: (){},
